@@ -3,7 +3,7 @@
     baseUrl: ".",
 
     paths: {
-        "riot": "./js/lib/riot+compiler.min",
+        "riot": "./js/lib/riot",
         "riotloader": "./js/lib/riotloader",
         "tags":"./js/tags",
         "app":"js/app"

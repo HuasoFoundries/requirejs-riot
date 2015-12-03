@@ -20,9 +20,9 @@ define("app",[
     });
 
 
-    riot.compile(function() {
+    
         riot.mount('app')
         riot.route.start(true)
-    })
+    
 
 });
