@@ -1,6 +1,6 @@
 {
   "name": "requirejs-riot",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Compiles riot tags dinamically and precompiles them during build",
   "main": "index.js",
   "scripts": {
