@@ -3,14 +3,22 @@
     baseUrl: ".",
 
     paths: {
-        "riot": "./lib/riot+compiler.min",
-        "riotloader": "../riotloader"
+        "riot": "./js/lib/riot+compiler.min",
+        "riotloader": "./js/lib/riotloader",
+        "tags":"./js/tags",
+        "app":"js/app"
+        
     },
 
     normalizeDirDefines: "all",
+    preserveLicenseComments: false,
+    stubModules: ['riotloader'],
 
-    name: "app",
-    out: "app-built.js",
-    optimize: "none"
+    name:"app",
+
+    out: "js-built/app.js",
+    optimize: 'uglify2',
+    logLevel: 0,
+    useStrict: true
 
 })
