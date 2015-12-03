@@ -1,0 +1,10 @@
+/js/vendor/**
+js/vendor
+/client/
+/node_modules/
+/app/
+/interfaces/
+/models/
+/vendor/
+*.php
+js-built/*
