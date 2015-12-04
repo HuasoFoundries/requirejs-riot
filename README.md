@@ -7,6 +7,33 @@ Loads [riot](http://riotjs.com/) templates dinamically. They are precompiled at 
 npm install requirejs-riot
 ```
 
+## How to use it
+
+You need to have `riot` on your deps, and request the tags prepending `riotloader!` to their url:
+
+```js
+
+	define([
+    "riot",
+    "riotloader!tags/timer",
+    "riotloader!tags/app"
+
+	], function(riot) {
+
+	    riot.mount('timer', {
+	        start: 0
+	    });
+
+	    riot.mount('app')
+	    riot.route.start(true)
+
+	});
+
+```
+
+This make the assumption that your tags have the `.tag` extension. 
+
+
 ## Example
 
 Install [serve](https://www.npmjs.com/package/serve) or any other basic webserver
@@ -33,6 +60,6 @@ When you build using `r.js`, the tag files will be inlined in your minified file
 ./node_modules/.bin/r.js -o example/build.js
 ```
 
-And then change the `main-data` attribute in `example/index.html` to point to `js-built/app` instead of `js/app`. Reload
+And then change the `data-main` attribute in `example/index.html` to point to `js-built/app` instead of `js/app`. Reload
 and check the requests to verify all has been inlined properly.
 
