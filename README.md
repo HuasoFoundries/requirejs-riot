@@ -1,6 +1,8 @@
 # requirejs-riot
 Loads [riot](http://riotjs.com/) templates dinamically. They are precompiled at build time
 
+[![npm](https://img.shields.io/npm/dm/requirejs-riot.svg)](https://www.npmjs.com/package/requirejs-riot)
+
 ## Installation
 
 ```sh
