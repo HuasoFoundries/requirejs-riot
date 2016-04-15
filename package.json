@@ -1,8 +1,8 @@
 {
     "name": "requirejs-riot",
-    "version": "0.1.4",
-    "description": "Compiles riot tags dinamically and precompiles them during build",
-    "main": "index.js",
+    "version": "0.1.5",
+    "description": "Deprecated, please use systemjs-riot instead",
+
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
@@ -22,11 +22,8 @@
     "author": "Felipe Figueroa",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/HuasoFoundries/requirejs-riot/issues"
+        "url": "https://github.com/HuasoFoundries/systemjs-riot/issues"
     },
-    "homepage": "https://github.com/HuasoFoundries/requirejs-riot#readme",
-    "devDependencies": {
-        "requirejs": "^2.1.22",
-        "riot": "^2.3.11"
-    }
+    "homepage": "https://github.com/HuasoFoundries/systemjs-riot#readme"
+
 }
